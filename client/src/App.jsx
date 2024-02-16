@@ -1,18 +1,19 @@
 import React from 'react'
 import "./App.css"
 import { Routes, Route } from "react-router-dom";
-import { About, Contact, Home, Login, Register, NotFound } from "./pages/index";
+import { WebLayout, InstDashLayout } from './Layouts';
+import { Login, Register } from "./pages/index";
 
 const App = () => {
   return (
     <>
       <Routes>
-        <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="contact" element={<Contact />} />
+        {/* routes for auth */}
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
-        <Route path="*" element={<NotFound />} />
+
+        {/* routes for website Layouts */}
+        <Route path="/*" element={<WebLayout />}/> 
       </Routes>
     </>
   )
