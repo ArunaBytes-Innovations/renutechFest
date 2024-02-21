@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Protest+Strike&display=swap");
+
+.login-container {
+  background-image: url("../assets/login_background_1.svg"); /* Adding backgroud image */
+  font-family: "Jost", sans-serif;
+}
+
+.login-container h1 {
+  font-family: "Protest Strike", sans-serif;
+}
