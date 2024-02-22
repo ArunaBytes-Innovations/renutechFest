@@ -39,16 +39,16 @@ const Footer = () => {
     <>
       <div className="sub_footer text-white flex flex-col md:flex-row justify-between items-center h-32 md:h-16">
         <h3 className="uppercase tracking-wide text-xl pt-2 ">Renutech</h3>
-        <p className="md:hidden">
+        <div className="md:hidden">
           <SocialBtn />
-        </p>
+        </div>
         <div className="copy-right flex flex-col items-center md:ml-16">
           <p>&copy; 2024 RenuTech</p>
           <p>Developed by Arunabyte Innovations</p>
         </div>
-        <p className="hidden md:block">
+        <div className="hidden md:block">
           <SocialBtn />
-        </p>
+        </div>
       </div>
     </>
   );
