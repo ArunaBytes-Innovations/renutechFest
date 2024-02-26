@@ -1,5 +1,5 @@
 import React from "react";
-import { Home } from "../pages";
+import { Home, About, Contact, Events } from "../pages";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 
@@ -9,6 +9,18 @@ const WebLayout = () => {
     {
       path: "/",
       element: <Home />,
+    },
+    {
+      path: "/about",
+      element: <About />,
+    },
+    {
+      path: "/contact",
+      element: <Contact />,
+    },
+    {
+      path: "/events",
+      element: <Events />,
     },
   ];
 
