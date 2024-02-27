@@ -13,6 +13,11 @@ const port = process.env.PORT || 3000;
 const connectDB = require('./utils/db.js');
 connectDB();
 
+// Routes 
+const authRoutes = require('./routes/authRoutes');
+
+app.use('/api/v1/admin', authRoutes);
+
 // listen for requests :)
 app.listen(port, function () {
     console.log('Server is listening on PORT : ' + port);
